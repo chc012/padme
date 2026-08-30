@@ -7,7 +7,26 @@ Reference implementation for the paper. Two parts:
    evaluator models.
 2. **The analysis.** Recompute the paper's tables from saved results.
 
-Method, criteria, prompts and findings are in the paper. This repository is the code.
+
+
+## Paper Summary
+
+Several evaluators score the same agent trajectory on a named criterion and disagree.
+Meta-evaluation asks which of them to trust, which needs a better-trajectory label established
+independently of any evaluator.
+
+![Three evaluators score the same trajectories on a named criterion and disagree, raising the question of which one to trust](docs/figures/meta-evaluation.png)
+
+PADMÉ manufactures the label instead of annotating it: run one τ³-bench task twice with the same
+agent under opposite steering on one criterion, so the better side is known by construction. Two
+LM filters discard pairs whose contrast is not visible, and the surviving pairs are scored one
+trajectory at a time. Pairs that fail the filtering gets retried up to a limit.
+
+![The PADMÉ pipeline: task-criterion cells, steering prompts at three quality levels, agent rollouts, two LM filters, then evaluator scoring and preference alignment](docs/figures/pipeline.png)
+
+PADMÉ gnerates data with good human alignment in our experiment and is generalizable.
+
+
 
 ## Install
 
