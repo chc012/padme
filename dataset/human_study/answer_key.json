@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "091c6715-bd48-46ae-8b29-b41fa3680150",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-adce55a7-feaa-4527-8d9b-10e45a7430dd"
+  },
+  {
+    "id": "68ee5dde-bc69-4331-8e54-eb23a14b15fe",
+    "correct_response": 1,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-09911af8-e791-49c3-9849-5d30417f6116"
+  },
+  {
+    "id": "244f33a6-7a54-4a6a-96a1-6315b869cd70",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-b71de70e-61a4-4504-832e-132960e04249"
+  },
+  {
+    "id": "102dcd5e-1c1f-49c4-9502-c80a45e3bfc7",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-6332774f-c44a-4e1b-899d-9ba138f9f85a"
+  },
+  {
+    "id": "8c6cde87-c5fe-4ffd-9517-b80ceef2a4f2",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-ed81ca81-cd5f-4ee1-8bd3-b6fab15cd0f4"
+  },
+  {
+    "id": "1ce75ea6-ee5a-4a5a-a129-40d875f3d2ae",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-8661f9b0-7671-4435-8f9d-7a2600657dd4"
+  },
+  {
+    "id": "1e2c3594-1edc-4e81-addd-592588e59661",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-f2ec1645-1349-47d8-8177-fdf87d223287"
+  },
+  {
+    "id": "a6333bdd-259d-49ae-ac22-4139abc6beef",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-ebba24ba-905a-462a-b10a-e05222cc08e8"
+  },
+  {
+    "id": "cd49d7d3-746b-4b2a-b181-aab30353d7ae",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-7a36c3a7-ceeb-4f88-9145-f882fbf3cf86"
+  },
+  {
+    "id": "f8067211-d905-4f63-abb1-9907bca39fdc",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-c17224d4-47ed-4017-be66-89573dcd2eb6"
+  },
+  {
+    "id": "779ebc1b-7f92-4f68-9b99-a20c6864c65c",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-2bd3f097-b9ae-4965-8f99-1095819b0671"
+  },
+  {
+    "id": "98659674-8385-4d1d-92ff-d6a784e561e6",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-17cd514d-712d-4c9e-814a-005cba838dd3"
+  },
+  {
+    "id": "bd069b33-2be9-4e0f-b4a2-997302b62b33",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-d2dcc2a9-ccc7-41c3-bb87-f7d0497d3504"
+  },
+  {
+    "id": "84b6a651-0b59-4724-b43d-afdf26e3c933",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-49cee88a-35c6-469b-aea8-2542bd07334a"
+  },
+  {
+    "id": "4b7786e8-5f50-4a7a-8161-06be28504cef",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-57aaa110-2acb-4fd8-ae8e-f0773eecb59b"
+  },
+  {
+    "id": "03978033-eddb-4fe3-ada2-c7a5a46af05e",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-9089df72-6d80-447d-83e7-7acda9fba05a"
+  },
+  {
+    "id": "0bc0ea35-9fea-4864-9b50-051dc7592cd7",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-603c3860-2799-4640-b90c-1cfc24a3618e"
+  },
+  {
+    "id": "3cd8ba3e-3ccd-464b-97b7-ba481a209691",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-20847f1f-a240-48fc-9fba-d8af921e9664"
+  },
+  {
+    "id": "83084bc6-f65b-4a67-a47c-57a97d4d7a7a",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-0b957819-39bd-4044-9b9c-fcfd5eecb053"
+  },
+  {
+    "id": "69f27b68-4357-4d87-af15-280f33d2b878",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-98fffa3e-01b9-4c13-be21-543a0875242d"
+  },
+  {
+    "id": "2838ce50-d673-4f99-8dfd-c58bd7cb7b6b",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-d4ad0568-0b5d-4505-ba45-177374f034ab"
+  },
+  {
+    "id": "125f9560-3e3f-4baf-9a8e-67f3aa3fa9f2",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-a5cb5ac7-7197-498a-a24f-9dd69d3f590b"
+  },
+  {
+    "id": "e9fc32d5-37e3-4264-984a-89b5093fbb82",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-c8eab3d2-2d50-48bd-ad46-a7b2d60ff9ae"
+  },
+  {
+    "id": "91453b9b-d16f-4ce0-b703-6a86b7d0fdd1",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-4b8b777c-0f2c-475a-a1ab-a9cbf009304d"
+  },
+  {
+    "id": "e40c3605-e6c0-4057-855c-1853f98a25e0",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-8db93365-7346-4241-86ac-753fdff2b18f"
+  },
+  {
+    "id": "0040ba71-c61e-48a3-83f6-408202706864",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-db7a3bb5-89b8-4463-bc8d-7e64d7517d55"
+  },
+  {
+    "id": "fd5a470d-4ee6-4ff3-bbdc-bfbd0caa91d3",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-9c760d32-5594-44e9-8cd6-016c6c7c4dd1"
+  },
+  {
+    "id": "d92ce35b-e382-440a-a558-caa0aabcc250",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-734192b9-3dd3-447f-8a97-0f3fdb4532e5"
+  },
+  {
+    "id": "955e1e96-4d08-4823-bede-2a6675e6b0bf",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-c40b0e03-ccea-4be2-8df6-6733f976c38e"
+  },
+  {
+    "id": "061026c5-6283-4aa1-b518-371a39c2f6c4",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-19b5052b-f5e6-454a-b6ea-597d8f3ff2c5"
+  },
+  {
+    "id": "88ced6a2-2898-4500-99c8-9a6a902f32a9",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-9527d012-e34e-441d-9a43-ca359d848ff9"
+  },
+  {
+    "id": "0f9963b6-e523-4a50-9004-b5156b08bae7",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-a106196b-be01-48a3-acb5-06f90cf956b6"
+  },
+  {
+    "id": "c8a220b8-5177-49ce-aaae-fae34b19a5a5",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-2ba29003-e1e0-45f1-9a7a-2eed487f534b"
+  },
+  {
+    "id": "abb77399-a422-45ec-8117-bdd0496a35c8",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-293cc7c9-dda5-4a4b-a40e-5d0677516288"
+  },
+  {
+    "id": "3670a8d2-6d74-4bea-afc7-b265be491ece",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-5fa556c9-8c56-4089-9944-ce1a20e6768b"
+  },
+  {
+    "id": "72568d78-3d6c-4903-ae0a-d8add9e3dd0f",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-e586c424-e6b9-4289-ae2b-e0ca26593c0b"
+  },
+  {
+    "id": "4eb80c6d-ca54-4b9e-953c-a2e77e16c240",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-6cdef37d-7819-4a63-84f5-50eedcaccf1e"
+  },
+  {
+    "id": "cfd18374-9f7b-4778-a9c8-b3aea3a8df16",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-fcb36d92-29c1-4844-975c-e433e061fcda"
+  },
+  {
+    "id": "1aab1154-4f7c-4643-a5c9-422005f31511",
+    "correct_response": 2,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-609a3775-e722-4f0a-b479-31ac256c802e"
+  },
+  {
+    "id": "334d0661-36a2-4efa-805a-6f2eb80b4607",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-d9219e54-69a7-4182-8551-1fcc4cd1f4bb"
+  },
+  {
+    "id": "dcd43b87-fe42-42bf-84c3-0f1837c99d3e",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-aa4c5166-6ead-45a2-b7b0-e28bcb4cc0d9"
+  },
+  {
+    "id": "ffa34005-bb02-44b9-9020-ea738a9387c5",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-6f795787-023e-41af-a926-caebe7005d64"
+  },
+  {
+    "id": "9abc2f75-fb60-422e-bc3f-f24de9c77da3",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-f5d4346e-c741-4a16-8321-7b4bda9a586d"
+  },
+  {
+    "id": "f4514eb6-f198-4c1a-bb36-80bc132dc1f3",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-b1d8adb0-0d7e-46c9-8ceb-572b4be2e793"
+  },
+  {
+    "id": "16e37eee-30fa-4430-bd91-333031828e9e",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-4dc1744b-be8d-4496-bcea-c574c561edba"
+  },
+  {
+    "id": "53f8faa7-ca41-4b8f-911a-2878d0a8e656",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-9719321e-82e5-49ca-8855-0d707b77e2a5"
+  },
+  {
+    "id": "c6467e94-ccb1-4d67-aba6-f343cbdea3b2",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-993fe307-8605-433d-be1f-6d6a034f4393"
+  },
+  {
+    "id": "f4488b95-b362-40b2-acb1-5dd3990e3c1d",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-cb98d80b-28af-44a2-825c-da263781ce97"
+  },
+  {
+    "id": "f50d1d61-9072-4893-9fa9-ba7f96378a2d",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-830b102e-6ede-41f8-960f-5de6b4cc83b1"
+  },
+  {
+    "id": "1b95d3f1-3cb5-45b1-961d-0e1ebbd6f196",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-340f627d-dffa-4c0e-96e7-5ceee4ff498f"
+  },
+  {
+    "id": "2d99d4e6-fe75-4b81-8d9c-49471ffea69f",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-2ca363f7-f59d-4dbe-ae38-dbc6d1bd426d"
+  },
+  {
+    "id": "10b73f6c-7628-4287-981d-102ed3a0e5c7",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-1989e385-2f71-4322-a5c9-bfa127c5d745"
+  },
+  {
+    "id": "f6a08d84-71be-449c-8955-48f8fffea7a8",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-a28640f9-3217-4a16-bf3a-09f7cd37b2b8"
+  },
+  {
+    "id": "91a73220-27af-4a85-929d-f6306f748139",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-fc6cd153-f112-4367-aefa-76723ac969a1"
+  },
+  {
+    "id": "87a74fd8-b72c-4f85-a9c4-e3f8cc4f6842",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-4bd2a960-a6a5-4e16-b3cb-1d109d75826e"
+  },
+  {
+    "id": "1a563758-0030-4ad6-b8e5-7954d50f0b9c",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-c2e43510-e7a4-4295-90ec-331ddcecb6d7"
+  },
+  {
+    "id": "e873029b-3268-462d-b079-e71555b77326",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-860668dc-0a29-465d-adb9-17f7fd8967b8"
+  },
+  {
+    "id": "fe495748-6773-4d8a-a818-7dd47aca0043",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-4679fddd-fb41-4d84-8077-7dfe56dbb36e"
+  },
+  {
+    "id": "ad24be4a-53fe-461e-bf5c-db43183ecd85",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-30adc7d8-895a-4a44-b7d2-f3b9b3bac684"
+  },
+  {
+    "id": "fba1008d-6e30-4777-9ed3-873d3b0e2280",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-8038cb54-047f-41b7-827d-6c7e562b251f"
+  },
+  {
+    "id": "31e7895b-bdf4-4837-b4f4-943a2f66a49b",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-d2c9e686-1ca4-49a7-a4de-fee879186e9c"
+  },
+  {
+    "id": "e1147784-f6c9-42ee-813b-899868915ffc",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-0a621200-b558-4c31-8446-44ead685fc98"
+  },
+  {
+    "id": "cb35cd59-1bd1-4bea-8313-03e4d0438ca1",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-41c45499-404b-4f10-a266-d769b991874c"
+  },
+  {
+    "id": "4a284971-387c-49c1-91e6-3695f49854ff",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-4e60c2cd-8250-4bb5-a9fa-10c99b0ec371"
+  },
+  {
+    "id": "21d3f036-edee-4d65-8d48-d80d162bab43",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-d821b495-535d-43de-8df1-b0097ab0517e"
+  },
+  {
+    "id": "4e548fc1-9398-4a9a-a257-d5aa36bfb085",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-6b259927-9888-400a-b40a-d1b5f2ca1964"
+  },
+  {
+    "id": "50ad33c8-8e67-43b7-ae3e-611539ba6b87",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-88f70e67-e79f-45e2-8257-ff8be34305ca"
+  },
+  {
+    "id": "45533cde-d71a-4774-a972-981a80b4be0e",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-3862c94a-5dbe-49f4-80b8-f881b51c31b7"
+  },
+  {
+    "id": "e8c8b8d2-f12b-448f-b30e-79c7ac34ceb5",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-865fc37c-7924-4998-aa59-e4a65cb8d699"
+  },
+  {
+    "id": "41bccb10-85bd-4abf-aa5d-edd8a4e4b9ba",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-019c0527-23eb-4b40-9fee-c23f38700769"
+  },
+  {
+    "id": "c5ca3839-500c-48ca-8ca8-d1937fe19091",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-171fb522-4a99-4037-88ef-2ad9d25aa7bb"
+  },
+  {
+    "id": "1d2170c4-8cda-4d99-98fa-b8e6708e0d40",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-116ff021-2198-4956-8c15-5c9931fdd1bc"
+  },
+  {
+    "id": "c87ef14f-b139-4f87-9468-4e04a0909443",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-f547125b-18e5-48f1-813f-e31744ff3e68"
+  },
+  {
+    "id": "0b39fc4d-182d-4e78-96bf-c2a176f06c9a",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-a7f4e5d3-7367-4743-b91c-28a2260af2f8"
+  },
+  {
+    "id": "f92c6209-ea9f-4b0e-af1d-8512447711a4",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-4cb762ba-6192-4242-bf3d-ade6d803fa2a"
+  },
+  {
+    "id": "9408157d-938c-4fe0-9042-c4e8d18c266c",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-7a1a953e-af24-4adf-9001-f8e8e962554f"
+  },
+  {
+    "id": "23d55019-f8df-428a-a58b-f0c6d8b9d292",
+    "correct_response": 2,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-6da2ea9e-0656-4bb7-bedb-9e039bd3a43a"
+  },
+  {
+    "id": "f03b573d-5c60-48e2-b1e2-133699a36482",
+    "correct_response": 1,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-106eeff9-62d9-4bec-9ff4-595abd39c8f4"
+  },
+  {
+    "id": "b6cb286e-e4c5-4dc0-982c-61ffdbb61859",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-588f0a4d-9698-423b-bf1a-8e17a5d414f0"
+  },
+  {
+    "id": "db45e7f4-6a6b-4e82-afdd-085f3976a1ea",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-9b895cf9-56a5-4d00-9e5c-5f9a93294144"
+  },
+  {
+    "id": "c6098590-6def-4f30-b982-5787c37cc3e8",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-7d2dc9c8-bc7f-433a-8a55-1f10076b3209"
+  },
+  {
+    "id": "59a72221-6a69-4b25-953a-7364590163ee",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-d282f066-5842-40e2-9a57-38141b438d17"
+  },
+  {
+    "id": "702c4380-27be-47f4-a4b1-d0ecb28ea4a7",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-885e0897-238b-41cd-acb1-d12c8f231e3b"
+  },
+  {
+    "id": "046a7bb7-d9f7-49fc-b715-0c9ffcf66cf4",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-6c8a85e4-f3d7-433b-ad76-e16881fc7a62"
+  },
+  {
+    "id": "4b14840f-93bb-4042-a290-d56fd2bfce0f",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-88e04236-90e9-41d2-9c16-9b0b63fd0266"
+  },
+  {
+    "id": "636825ba-c3e7-4929-a0d0-9fc17e9191f5",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-29544406-74f5-4791-a66f-dc269a12abea"
+  },
+  {
+    "id": "bde5ad52-f2ee-420a-a938-0dab1d96390d",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-118a10c7-dfb4-4bfb-87d5-8d9a5738d4b4"
+  },
+  {
+    "id": "bee339ce-c2c5-4b02-bb74-e63e5c814236",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-9bd5aa27-1345-40c8-b843-780d3c75f663"
+  },
+  {
+    "id": "ee2f7d48-402c-47e2-92e9-88b29923c083",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-058857d0-5656-46eb-89c7-75149b8317f3"
+  },
+  {
+    "id": "576766cd-f798-4e47-9e8a-f66290685ae4",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-82f99e52-aeca-48c1-9d18-e10ce110323f"
+  },
+  {
+    "id": "72e0892d-5544-4ecd-a947-eb6c1193b9fc",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-67c01f86-00e1-4447-a68f-ae7b801ed222"
+  },
+  {
+    "id": "8d8f81ba-8dc2-493d-9e1e-86113c2244f3",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-c001343b-fa82-44fe-8971-22b7bc5108b4"
+  },
+  {
+    "id": "ae7cbe7c-fe2a-4f1f-a4b4-2765fad59986",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-e85f12e6-c9f2-4a33-83bb-c7f96f36b180"
+  },
+  {
+    "id": "8e1fcdba-8afa-4b07-9879-90ce181c4312",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-b90cb7e4-bd14-45c9-9c23-ae1f7f276d70"
+  },
+  {
+    "id": "617d1f99-6fb1-4f00-96ad-9359206802ea",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-b32337d2-b01c-4002-9d59-429a649fbc54"
+  },
+  {
+    "id": "d1a83be3-743b-4a87-b29d-542a58c57c58",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-7fe5f1cf-1731-4680-ad17-3c659d5aeb0f"
+  },
+  {
+    "id": "5836aaa4-4bec-4f1f-a439-506d5e52a421",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-5eb6f1be-088a-4f4c-987e-5d1a0148232c"
+  },
+  {
+    "id": "7ac364bf-4a0c-402c-81d4-ea759942e624",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-e20f2a13-3ac8-404e-8753-bf3279099a97"
+  },
+  {
+    "id": "536f5d00-4ae9-462a-921a-18fc67c3bd7a",
+    "correct_response": 2,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-57205939-31b0-4ab3-bc3f-68b9219418c1"
+  },
+  {
+    "id": "bf3b5bd9-1ce1-490e-bc8a-cec2e3f73361",
+    "correct_response": 1,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-71bc5804-b99c-4e29-bfca-00a641a8ed15"
+  },
+  {
+    "id": "001a9fc0-24c1-43f3-a17b-db963a5d0534",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-f80ddf27-8386-496c-a8c5-e532b61cd49c"
+  },
+  {
+    "id": "b1279a8b-e90b-48a8-9bd2-061b5cdd18f9",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-61a0bb6a-b8ca-4ba2-ba34-e4c69f365fa0"
+  },
+  {
+    "id": "8dd83106-12de-4b8e-928b-f3da159132a6",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-2fa0b4f1-ebad-44fe-8204-b1d5000f5a39"
+  },
+  {
+    "id": "187d0690-545f-4a8f-ab9f-5911c3681d51",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-8a99d4e0-447e-41bb-9b2b-5a3aecfa8a82"
+  },
+  {
+    "id": "b304e7ed-0b02-455e-9eb8-a2d05eeb3a3b",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-01a693ec-72d3-4711-8ed3-cf7efc9d2a3d"
+  },
+  {
+    "id": "6bc59fcf-6c91-4b44-8516-3ae0e8b77d7c",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-e7f58eff-e75a-4a0f-8ed1-e367240b1537"
+  },
+  {
+    "id": "db9c8ecc-ce6f-42dc-82ae-2acc97684310",
+    "correct_response": 2,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-30341b90-8841-4c44-a572-4bc61f0eee77"
+  },
+  {
+    "id": "4f71b380-85be-4196-9a6e-0694260c4325",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-c1ab0290-250e-4262-8827-825b1b3d8181"
+  },
+  {
+    "id": "6bd0c857-8d3e-4b44-9a26-1319f5d5c46f",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-d41c6b76-b2fa-4b8c-bc8b-a628c6be242f"
+  },
+  {
+    "id": "ec1b7353-b02f-4b96-a12a-5fa7c60ed0f8",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-d5aadb95-6b03-4adf-8164-87f975194908"
+  },
+  {
+    "id": "0e7623b2-275b-486e-b69c-a76917bac8f0",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-8df7da4f-6cc0-429e-a52e-fcca6209febc"
+  },
+  {
+    "id": "0f6b406b-2cb9-4907-a651-b5196a6b289d",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-496aeb85-933f-42a8-a627-5875afed362c"
+  },
+  {
+    "id": "45b67b8e-d28c-44df-ba4d-df84371eb446",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-c1a0e892-3d01-4b4e-b8e7-95735d775150"
+  },
+  {
+    "id": "e96393c8-928e-4862-9ef6-9cdf879bba4d",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-f943abe1-87e1-4ca6-8fb7-4bf6c252cb84"
+  },
+  {
+    "id": "db75b08d-6a63-4f41-a5b1-cde35ae4a192",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-c71febe6-dbbe-4073-92c7-1d88541c8e44"
+  },
+  {
+    "id": "e66e649a-b552-4392-a611-85563e7b6e3d",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-db9fae88-ed12-4c69-98f6-0acbfe503f10"
+  },
+  {
+    "id": "613b0c13-3731-442d-ae92-d5ff17a1f2a6",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-836d8766-8a6d-4dd0-ab3b-79211b24a81c"
+  },
+  {
+    "id": "63aa2fcd-e379-4f87-aa19-8934b3a3c2a5",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-20548832-1471-448d-bd3f-8cd165619385"
+  },
+  {
+    "id": "028c334d-92d8-4fc8-9bec-f818a4be0c89",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-be3f5651-8b82-4664-83f8-3f15c6321a1e"
+  },
+  {
+    "id": "43b68866-f443-4289-8c3f-4a6c600c94f4",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-21849557-a426-4abe-ac66-d40bbfe1c980"
+  },
+  {
+    "id": "d5702826-4ecf-48e8-bec8-b1a286e3726e",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-1467598f-6712-4381-bec1-e1287159e659"
+  },
+  {
+    "id": "bdbf9911-1673-4762-820b-f7b0837abe62",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-a21ed99a-95ac-4654-b88c-eb9c52a64fcf"
+  },
+  {
+    "id": "f90af7b4-29ad-4877-b98b-b57609bf22e3",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-fe43ded5-dee0-4b2b-bdd2-6209766b4001"
+  },
+  {
+    "id": "207df619-6ed1-4668-8a5f-185e1bbb77e0",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "communication_clarity",
+    "group_id": "group-413ea57d-fb66-4f5e-8a34-c7a743b50a6c"
+  },
+  {
+    "id": "bd415bf3-7f6d-4cec-9fb1-b2154ef6bc8e",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-e1a959dd-e344-462b-aec5-3d864e72eb41"
+  },
+  {
+    "id": "a506ed94-3aae-4d2d-a179-8871a6d655be",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-14c5f011-6892-478d-866d-3bee7b18fcf3"
+  },
+  {
+    "id": "e12dfcbd-ca5b-4750-a315-046c3567c761",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-8e483b01-74de-49fa-971a-a8a4659eac69"
+  },
+  {
+    "id": "6a866b34-3e78-417e-9f09-b861de99d2b7",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-7d45714f-bfeb-43ef-8f06-7be0b91b830b"
+  },
+  {
+    "id": "0eef6e64-7d7a-451d-a8fe-a98ce3946512",
+    "correct_response": 1,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-e3fa88c8-d90c-403f-b9db-9416b1a52d19"
+  },
+  {
+    "id": "d685006b-f149-461f-a3bc-5bdf22383b06",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-853a9cdd-f968-4cd4-9623-97148635e689"
+  },
+  {
+    "id": "cbaf69ea-0324-46e3-ad11-3e77e7f6466e",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-96b18dba-5b07-4462-932f-f87d31d6bf3a"
+  },
+  {
+    "id": "f6433ffe-aa96-4632-9e0d-723ce87026d5",
+    "correct_response": 2,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-e0321e5f-3b3d-4bcd-90f9-33c0a45518d4"
+  },
+  {
+    "id": "de111f89-e7a9-46e3-a6f8-9468bd455025",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-37d5c53a-2269-4a3a-9305-dc07ca46884c"
+  },
+  {
+    "id": "3a43bbdf-a2d7-4425-a984-a0045ac5305f",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-0c887972-6c6c-4838-89e7-0b44a71a168c"
+  },
+  {
+    "id": "567841c9-0f3d-4f03-8686-a417a543ea49",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-62848777-8993-49fb-b0ff-7f3a2b87889a"
+  },
+  {
+    "id": "77c39583-0460-4c80-a1e4-a99abd6b701f",
+    "correct_response": 1,
+    "filter_outcome": "judge2_reject",
+    "criterion_name": "friendliness",
+    "group_id": "group-c02e2c2b-4460-4029-a983-89715f3fb695"
+  },
+  {
+    "id": "13171d13-8b77-46ee-98fa-63b5821daa02",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "friendliness",
+    "group_id": "group-9031661c-f9c6-4e54-a94c-95b3d64b3bdd"
+  },
+  {
+    "id": "4d3281b6-295e-4ba2-8511-e1a129108bae",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-e3729607-7b9a-40bf-91ae-0679f61a38ab"
+  },
+  {
+    "id": "60098b70-9f4f-4fdb-86e7-b7b022f7c97d",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-aaca8e14-0d05-4ac2-9ddf-ba095ffc9f94"
+  },
+  {
+    "id": "96c554e6-64cb-45e5-a07c-dabb603be3f1",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-b68ac923-e3dd-4dc4-bc00-847e968c872e"
+  },
+  {
+    "id": "b7d9ead8-65b8-44ab-a52b-5c214270390e",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-88bf1d4c-37af-4191-a95a-3eb1de3604b5"
+  },
+  {
+    "id": "ed3f8fae-7c46-48f9-819e-a6c70d276e55",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-ebe2ee03-719c-4c5f-928d-ae1d386be245"
+  },
+  {
+    "id": "4d132762-b6bb-4b67-ab2c-a480d8b569ed",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-33d5bcf5-f98b-4b33-a2f3-90f52d66af90"
+  },
+  {
+    "id": "d12a9515-0f17-4bde-a555-ffc84a7352d4",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-f4c45a9a-acff-405b-85fa-9ca22a8377d5"
+  },
+  {
+    "id": "bd88ecb1-4c0c-44ca-8fef-e48ce761e2fe",
+    "correct_response": 1,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-d9a8e165-0650-4a36-8e15-e4b0c6fc0cf3"
+  },
+  {
+    "id": "1ec10183-15de-4c65-ada5-c559d492588e",
+    "correct_response": 2,
+    "filter_outcome": "judge1_reject",
+    "criterion_name": "task_resolution",
+    "group_id": "group-5795c092-35a6-451a-a25b-ad84283674b9"
+  },
+  {
+    "id": "931e1922-7443-4587-b411-4432255cd02f",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-36feb372-13a6-4132-8def-041ba072c8af"
+  },
+  {
+    "id": "4b490a73-6681-4abd-bf7c-c3689c65761b",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-6b5a1be7-e3e1-4787-813c-2e6af27f7a4f"
+  },
+  {
+    "id": "d2c430a5-f76b-4d33-aa44-9f6998726f7d",
+    "correct_response": 2,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-cb5e15a3-63d3-4296-8f4b-2913c0cbdcd4"
+  },
+  {
+    "id": "f67a07be-d170-472f-a66e-410b3afe4039",
+    "correct_response": 1,
+    "filter_outcome": "kept",
+    "criterion_name": "task_resolution",
+    "group_id": "group-b68966be-0d3e-4867-9bd5-9bf5397a16cd"
+  }
+]

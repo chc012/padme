@@ -1,0 +1,46 @@
+# The smallest run that exercises every stage end to end.
+#
+#   python tools/run_pipeline.py --config config/smoke.yaml --dry-run
+#   python tools/run_pipeline.py --config config/smoke.yaml
+#
+# Three cells: 6 simulations, up to 6 judge calls, and a handful of pairs. Minutes, not
+# hours, and cents rather than tens of dollars. Run this before `config/pipeline.yaml`.
+#
+# What it does NOT do is sample the dataset. One domain and one criterion is a harness
+# test: it proves the tau3 fork is installed, the keys work, the user simulator's
+# deployment is awake, both judges answer, and the pair files land where the eval builder
+# expects them. It says nothing about accuracy.
+#
+# Every key not set here keeps its default from `tools/run_pipeline.py:_DEFAULTS`.
+
+out_dir: data/smoke
+
+domains: [airline]
+task_indices: [0, 1, 2]
+
+criteria:
+  - name: friendliness
+    description: >-
+      Warmth and consideration toward the customer: whether the agent acknowledges their situation
+      and how they feel about it, delivers unwelcome news with care, and leaves them feeling
+      attended to. Judge the manner, not whether the request was resolved.
+
+generator: fireworks_ai/accounts/fireworks/models/gpt-oss-120b
+
+judges:
+  judge1: fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b
+  judge2: fireworks_ai/accounts/fireworks/models/gpt-oss-120b
+
+workers: 3
+sim_concurrency: 3
+serverless_concurrency: 3
+
+# A smoke test wants to SEE a failure, not paper over it: one attempt, and no re-draw
+# after a filter rejection. Both of those are retries whose whole purpose is to hide a
+# transient problem, which is the opposite of what this run is for.
+sim_attempts: 1
+sim_backoff: 5.0
+filter_retries: 0
+
+seed: 2026
+warm: true

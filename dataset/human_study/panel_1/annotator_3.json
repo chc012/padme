@@ -1,0 +1,452 @@
+[
+ {
+  "id": "028c334d-92d8-4fc8-9bec-f818a4be0c89",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "091c6715-bd48-46ae-8b29-b41fa3680150",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "16e37eee-30fa-4430-bd91-333031828e9e",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "1aab1154-4f7c-4643-a5c9-422005f31511",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 2,
+  "confidence": 0
+ },
+ {
+  "id": "1e2c3594-1edc-4e81-addd-592588e59661",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "23d55019-f8df-428a-a58b-f0c6d8b9d292",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "244f33a6-7a54-4a6a-96a1-6315b869cd70",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "45b67b8e-d28c-44df-ba4d-df84371eb446",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "4b14840f-93bb-4042-a290-d56fd2bfce0f",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "4eb80c6d-ca54-4b9e-953c-a2e77e16c240",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "613b0c13-3731-442d-ae92-d5ff17a1f2a6",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "702c4380-27be-47f4-a4b1-d0ecb28ea4a7",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "779ebc1b-7f92-4f68-9b99-a20c6864c65c",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "8c6cde87-c5fe-4ffd-9517-b80ceef2a4f2",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "9abc2f75-fb60-422e-bc3f-f24de9c77da3",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "b6cb286e-e4c5-4dc0-982c-61ffdbb61859",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "c6098590-6def-4f30-b982-5787c37cc3e8",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 2,
+  "confidence": 0
+ },
+ {
+  "id": "c6467e94-ccb1-4d67-aba6-f343cbdea3b2",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "c87ef14f-b139-4f87-9468-4e04a0909443",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "cd49d7d3-746b-4b2a-b181-aab30353d7ae",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "d5702826-4ecf-48e8-bec8-b1a286e3726e",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "db75b08d-6a63-4f41-a5b1-cde35ae4a192",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "dcd43b87-fe42-42bf-84c3-0f1837c99d3e",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "f90af7b4-29ad-4877-b98b-b57609bf22e3",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "f92c6209-ea9f-4b0e-af1d-8512447711a4",
+  "criterion_name": "communication_clarity",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "0bc0ea35-9fea-4864-9b50-051dc7592cd7",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "2838ce50-d673-4f99-8dfd-c58bd7cb7b6b",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "2d99d4e6-fe75-4b81-8d9c-49471ffea69f",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "3a43bbdf-a2d7-4425-a984-a0045ac5305f",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "4b7786e8-5f50-4a7a-8161-06be28504cef",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "576766cd-f798-4e47-9e8a-f66290685ae4",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "636825ba-c3e7-4929-a0d0-9fc17e9191f5",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "6a866b34-3e78-417e-9f09-b861de99d2b7",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "77c39583-0460-4c80-a1e4-a99abd6b701f",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "7ac364bf-4a0c-402c-81d4-ea759942e624",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "83084bc6-f65b-4a67-a47c-57a97d4d7a7a",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "87a74fd8-b72c-4f85-a9c4-e3f8cc4f6842",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "8d8f81ba-8dc2-493d-9e1e-86113c2244f3",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "8e1fcdba-8afa-4b07-9879-90ce181c4312",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "a506ed94-3aae-4d2d-a179-8871a6d655be",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "ad24be4a-53fe-461e-bf5c-db43183ecd85",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "bd069b33-2be9-4e0f-b4a2-997302b62b33",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "bee339ce-c2c5-4b02-bb74-e63e5c814236",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "d1a83be3-743b-4a87-b29d-542a58c57c58",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "d685006b-f149-461f-a3bc-5bdf22383b06",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "e873029b-3268-462d-b079-e71555b77326",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "e9fc32d5-37e3-4264-984a-89b5093fbb82",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "f50d1d61-9072-4893-9fa9-ba7f96378a2d",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "f6433ffe-aa96-4632-9e0d-723ce87026d5",
+  "criterion_name": "friendliness",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "f6a08d84-71be-449c-8955-48f8fffea7a8",
+  "criterion_name": "friendliness",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "001a9fc0-24c1-43f3-a17b-db963a5d0534",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "0e7623b2-275b-486e-b69c-a76917bac8f0",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "21d3f036-edee-4d65-8d48-d80d162bab43",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 0
+ },
+ {
+  "id": "31e7895b-bdf4-4837-b4f4-943a2f66a49b",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "3670a8d2-6d74-4bea-afc7-b265be491ece",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "4d132762-b6bb-4b67-ab2c-a480d8b569ed",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "50ad33c8-8e67-43b7-ae3e-611539ba6b87",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "536f5d00-4ae9-462a-921a-18fc67c3bd7a",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "60098b70-9f4f-4fdb-86e7-b7b022f7c97d",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "6bd0c857-8d3e-4b44-9a26-1319f5d5c46f",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 100
+ },
+ {
+  "id": "88ced6a2-2898-4500-99c8-9a6a902f32a9",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "8dd83106-12de-4b8e-928b-f3da159132a6",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "931e1922-7443-4587-b411-4432255cd02f",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "955e1e96-4d08-4823-bede-2a6675e6b0bf",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "b304e7ed-0b02-455e-9eb8-a2d05eeb3a3b",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 0
+ },
+ {
+  "id": "b7d9ead8-65b8-44ab-a52b-5c214270390e",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "bd88ecb1-4c0c-44ca-8fef-e48ce761e2fe",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "c5ca3839-500c-48ca-8ca8-d1937fe19091",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 100
+ },
+ {
+  "id": "c8a220b8-5177-49ce-aaae-fae34b19a5a5",
+  "criterion_name": "task_resolution",
+  "judge_preference": 1,
+  "confidence": 50
+ },
+ {
+  "id": "cb35cd59-1bd1-4bea-8313-03e4d0438ca1",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "d2c430a5-f76b-4d33-aa44-9f6998726f7d",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "db9c8ecc-ce6f-42dc-82ae-2acc97684310",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "e40c3605-e6c0-4057-855c-1853f98a25e0",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "e8c8b8d2-f12b-448f-b30e-79c7ac34ceb5",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ },
+ {
+  "id": "fd5a470d-4ee6-4ff3-bbdc-bfbd0caa91d3",
+  "criterion_name": "task_resolution",
+  "judge_preference": 2,
+  "confidence": 50
+ }
+]

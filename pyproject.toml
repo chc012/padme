@@ -1,0 +1,25 @@
+# This is a pipeline you run from its own directory, NOT an installable package. There is
+# deliberately no `[project]` or `[build-system]` block: declaring one invites `pip install -e .`,
+# which does not work here and fails in a confusing way. Two reasons it cannot work:
+#
+#   - `src/` and `tools/` have no `__init__.py`; everything imports as `src.metaeval...` from the
+#     repo root, which the tools arrange themselves by putting the root on `sys.path`.
+#   - `steering/criteria.py` resolves `config/criteria.json` relative to its own file at import
+#     time, so a relocated copy raises FileNotFoundError before anything else runs.
+#
+# Install the dependencies with `pip install -r requirements.txt` and run from the repo root.
+#
+# What remains here is not optional:
+#
+# `pythonpath = ["."]` is what makes `from src.metaeval... import ...` and `from tools... import
+# ...` work without installing anything.
+#
+# `rootdir`-anchoring is the other half. `src/` is a plain directory rather than an installed
+# distribution, so if pytest resolves its rootdir to a *parent* of this one -- which it does
+# whenever a parent holds its own `pyproject.toml` -- then `src` binds to the parent's `src` and
+# every import silently reads different code. This file's existence is what pins the rootdir here.
+# `tests/conftest.py` then chdirs to it, so `pytest` works from any directory.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

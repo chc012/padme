@@ -1,0 +1,85 @@
+# Data synthesis pipeline.
+#
+#   python tools/run_pipeline.py --config config/pipeline.yaml --dry-run
+#   python tools/run_pipeline.py --config config/pipeline.yaml
+#
+# Full reference for every key: docs/REPRODUCE.md
+
+out_dir: data/full_run
+
+# --- what to generate -------------------------------------------------------
+domains: [airline, banking_knowledge, retail, telecom]
+
+# null = every task in each domain (375 tasks -> 1,125 cells at 3 criteria).
+# [0, 1, 2] takes the first 3 tasks of each domain instead (36 cells).
+task_indices: null
+
+# First N cells only, for smoke-testing. Goes to <out_dir>/smoke-N/.
+# It is a PREFIX of the cross product, so it is one domain -- a harness test, not a sample.
+limit: null
+
+# name + description is the whole contract: nothing else about a criterion reaches the
+# generator. The descriptions below are recorded verbatim from
+# src/metaeval/steering/criteria.py -- the exact text every previous experiment used -- so a
+# run is fully described by this file. They are GENERATED, not typed: writing them by hand
+# once paraphrased two of three and cut task_resolution from 416 characters to 212, which
+# would have changed the steering prompt while the config still looked correct.
+# `tests/test_run_pipeline.py` asserts they still match the source exactly.
+#
+# Dropping a `description:` falls back to the built-in text. Changing one defines a NEW
+# criterion, so do that deliberately.
+criteria:
+  - name: communication_clarity
+    description: >-
+      How easily the customer can follow the agent: whether the main point is findable, whether
+      technical or policy language is explained, whether multi-part information is organised, and
+      whether the customer is left knowing what is true and what happens next. Judge the
+      presentation, not the warmth or the outcome.
+  - name: friendliness
+    description: >-
+      Warmth and consideration toward the customer: whether the agent acknowledges their situation
+      and how they feel about it, delivers unwelcome news with care, and leaves them feeling
+      attended to. Judge the manner, not whether the request was resolved.
+  - name: task_resolution
+    description: >-
+      Whether the customer's actual problem was settled: did the agent establish what was needed,
+      take the actions that would resolve it, and leave the customer with the outcome they came
+      for. A correct refusal counts as resolution -- if the request was not permitted, saying so
+      plainly and explaining why resolves it, while quietly doing it anyway does not. Judge the
+      outcome, not the manner or how well it was explained.
+
+# --- models -----------------------------------------------------------------
+generator: fireworks_ai/accounts/fireworks/models/gpt-oss-120b
+
+# A cascade in this order: each judge is a veto, and the label is always the generator's
+# intent. judge2 only sees judge1's survivors.
+judges:
+  judge1: fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b
+  judge2: fireworks_ai/accounts/fireworks/models/gpt-oss-120b
+
+# --- concurrency ------------------------------------------------------------
+workers: 8
+
+# Must match the user simulator's replica count. Above it you get
+# DEPLOYMENT_SCALING_UP errors, not throughput.
+sim_concurrency: 8
+
+# Guard rail on serverless calls. Lower to 4 first if rate limits appear.
+serverless_concurrency: 8
+
+# --- robustness -------------------------------------------------------------
+# Retries for a FAILED simulation (crash, cold start). A failed attempt still spends its
+# tokens at the provider, so N attempts on a doomed cell costs N simulations.
+sim_attempts: 5
+sim_backoff: 30.0
+
+# Re-draw a pair the FILTER rejected, N more times. 0 disables.
+# Settings are nested: run at 2 and truncate on the recorded attempt to get 0 and 1 free.
+filter_retries: 2
+
+# --- reproducibility --------------------------------------------------------
+# Fixes gap and agent assignment. Not the trajectories: temperature 0 is not bitwise
+# reproducible on Fireworks, since MoE routing depends on batch composition.
+seed: 2026
+
+warm: true

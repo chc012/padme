@@ -1,0 +1,276 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 55a9d9c..7f7516e 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -22,7 +22,11 @@ dependencies = [
+     "psutil>=7.0.0",
+     "loguru>=0.7.3",
+     "docstring-parser>=0.16",
+-    "litellm>=1.80.15,<1.82.7",
++    # Upper bound relaxed from <1.82.7. That bound excluded litellm 1.82.7 and
++    # 1.82.8, which were pulled from PyPI (the 1.82.x line stops at 1.82.6) --
++    # it is a security exclusion, not an API incompatibility, and it also blocked
++    # every later safe release. Exclude exactly the pulled versions instead.
++    "litellm>=1.80.15,!=1.82.7,!=1.82.8",
+     "tenacity>=9.0.0",
+     "deepdiff>=8.4.2",
+     "addict>=2.4.0",
+diff --git a/src/tau2/config.py b/src/tau2/config.py
+index f5187fa..8f77afe 100644
+--- a/src/tau2/config.py
++++ b/src/tau2/config.py
+@@ -1,3 +1,37 @@
++import os
++
++
++def _env_flag(name: str, default: bool) -> bool:
++    """Read a boolean from the environment. Unset -> default."""
++    raw = os.getenv(name)
++    if raw is None:
++        return default
++    return raw.strip().lower() not in {"0", "false", "no", "off", ""}
++
++
++# =============================================================================
++# FORK MODIFICATIONS (meta-evaluation project)
++# =============================================================================
++# This fork studies meta-evaluation of LLM judges, so tau2's own LLM-based
++# judging is switched off by default: it is not the object of study here, and
++# leaving it on would put a third-party judge inside our reward path.
++#
++# Disabling is DELIBERATELY NOT "return no findings". An empty NL-assertion
++# check list would score reward 1.0 (`all([]) is True`), silently inflating any
++# task whose reward_basis includes NL_ASSERTION -- 112 of 114 retail tasks.
++# Instead the evaluator drops NL_ASSERTION from the reward basis and warns, so
++# the reward reflects only the programmatic components that actually ran.
++#
++# Set TAU2_DISABLE_LLM_JUDGES=0 to restore upstream behaviour.
++DISABLE_LLM_JUDGES = _env_flag("TAU2_DISABLE_LLM_JUDGES", default=True)
++
++# Force every LLM call through one model regardless of what the caller asked
++# for. Set TAU2_LLM_OVERRIDE to a litellm model string. Used to run the test
++# suite against a provider we hold keys for, without editing ~60 hardcoded
++# model names across the tests.
++LLM_OVERRIDE = os.getenv("TAU2_LLM_OVERRIDE") or None
++
++
+ # =============================================================================
+ # SIMULATION DEFAULTS (overridable via CLI)
+ # =============================================================================
+diff --git a/src/tau2/evaluator/evaluator.py b/src/tau2/evaluator/evaluator.py
+index 76c95a8..d8bf6a4 100644
+--- a/src/tau2/evaluator/evaluator.py
++++ b/src/tau2/evaluator/evaluator.py
+@@ -1,6 +1,9 @@
+ from enum import Enum
+ from typing import Optional
+ 
++from loguru import logger
++
++from tau2.config import DISABLE_LLM_JUDGES
+ from tau2.data_model.simulation import RewardInfo, SimulationRun, TerminationReason
+ from tau2.data_model.tasks import RewardType, Task
+ from tau2.environment.toolkit import ToolType, get_tool_types
+@@ -178,6 +181,14 @@ def evaluate_simulation(
+             strict_replay=strict_replay,
+         )
+     elif evaluation_type == EvaluationType.NL_ASSERTIONS:
++        if DISABLE_LLM_JUDGES:
++            # FORK: this evaluation type is *only* LLM judging, so there is
++            # nothing meaningful to return. Fail loudly rather than silently
++            # scoring 1.0.
++            raise RuntimeError(
++                "EvaluationType.NL_ASSERTIONS requires LLM judging, which is "
++                "disabled in this fork. Set TAU2_DISABLE_LLM_JUDGES=0 to enable."
++            )
+         reward_info = NLEvaluator.calculate_reward(
+             task=task,
+             full_trajectory=trajectory,
+@@ -213,7 +224,22 @@ def evaluate_simulation(
+         )
+         nl_reward_info = None
+         task_needs_nl = RewardType.NL_ASSERTION in task.evaluation_criteria.reward_basis
+-        if evaluation_type == EvaluationType.ALL_WITH_NL_ASSERTIONS or task_needs_nl:
++        want_nl = (
++            evaluation_type == EvaluationType.ALL_WITH_NL_ASSERTIONS or task_needs_nl
++        )
++        if want_nl and DISABLE_LLM_JUDGES:
++            # FORK: NL assertions are LLM-judged, and this fork disables LLM
++            # judging. Do NOT fall through to an empty check list: `all([])` is
++            # True, which would hand the task a free NL_ASSERTION reward of 1.0.
++            # Drop the component from the basis instead, so the reward reflects
++            # only what actually ran.
++            logger.warning(
++                f"TAU2_DISABLE_LLM_JUDGES: skipping NL_ASSERTION for task "
++                f"{task.id!r}. Reward EXCLUDES this component and is therefore "
++                f"not comparable with upstream tau2 scores for this task."
++            )
++            want_nl = False
++        if want_nl:
+             nl_reward_info = NLEvaluator.calculate_reward(
+                 task=task,
+                 full_trajectory=trajectory,
+@@ -230,6 +256,10 @@ def evaluate_simulation(
+         evaluated_bases = env_bases | action_bases | comm_bases
+         if nl_reward_info is not None:
+             evaluated_bases |= nl_bases
++        if DISABLE_LLM_JUDGES:
++            # FORK: intentionally not evaluated, so exclude it from the basis
++            # rather than tripping the "declared but not evaluated" guard below.
++            task_reward_basis = task_reward_basis - nl_bases
+         unevaluated = task_reward_basis - evaluated_bases
+         if unevaluated:
+             raise ValueError(
+@@ -294,7 +324,10 @@ def evaluate_simulation(
+             full_trajectory=trajectory,
+         )
+         nl_reward_info = None
+-        if evaluation_type == EvaluationType.ALL_WITH_NL_ASSERTIONS_IGNORE_BASIS:
++        if (
++            evaluation_type == EvaluationType.ALL_WITH_NL_ASSERTIONS_IGNORE_BASIS
++            and not DISABLE_LLM_JUDGES  # FORK: see DISABLE_LLM_JUDGES in config
++        ):
+             nl_reward_info = NLEvaluator.calculate_reward(
+                 task=task,
+                 full_trajectory=trajectory,
+diff --git a/src/tau2/evaluator/reviewer.py b/src/tau2/evaluator/reviewer.py
+index 1c8c0ce..a2e0040 100644
+--- a/src/tau2/evaluator/reviewer.py
++++ b/src/tau2/evaluator/reviewer.py
+@@ -35,7 +35,7 @@ Usage:
+ from enum import Enum
+ from typing import Optional, Union
+ 
+-from tau2.config import DEFAULT_LLM_EVAL_USER_SIMULATOR
++from tau2.config import DEFAULT_LLM_EVAL_USER_SIMULATOR, DISABLE_LLM_JUDGES
+ from tau2.data_model.simulation import (
+     AuthenticationClassification,
+     HallucinationCheck,
+@@ -98,6 +98,16 @@ def review_simulation(
+         - For FULL mode: (Review, AuthenticationClassification)
+         - For USER mode: (UserOnlyReview, None)
+     """
++    if DISABLE_LLM_JUDGES:
++        # FORK: conversation review, auth classification and hallucination
++        # checking are all LLM-judged. Refuse rather than return an empty review
++        # that a caller could mistake for "no errors found".
++        raise RuntimeError(
++            "review_simulation() requires LLM judging, which is disabled in this "
++            "fork (TAU2_DISABLE_LLM_JUDGES). Do not enable --auto-review. Set "
++            "TAU2_DISABLE_LLM_JUDGES=0 to restore upstream behaviour."
++        )
++
+     is_full_duplex = _is_full_duplex(simulation)
+ 
+     if mode == ReviewMode.FULL:
+diff --git a/src/tau2/user/user_simulator.py b/src/tau2/user/user_simulator.py
+index 51ef4bb..89d5acc 100644
+--- a/src/tau2/user/user_simulator.py
++++ b/src/tau2/user/user_simulator.py
+@@ -249,6 +249,15 @@ class UserSimulator(
+             cost=assistant_message.cost,
+             usage=assistant_message.usage,
+             raw_data=assistant_message.raw_data,
++            # `generate()` times every call, including this one, and `UserMessage` accepts the
++            # field -- but the role flip copied cost/usage/raw_data and dropped the timing, so
++            # every user-simulator call was untimed while its tokens were counted. Measured on
++            # 72 saved simulations: 473 of 473 user turns carried usage and 0 carried a
++            # latency, leaving 18% of simulation time unattributable and forcing the
++            # trajectory stage's service time to be reported as a floor rather than a total.
++            # The streaming simulator has the same omission here but survives it by stashing
++            # the value on `state._llm_generation_seconds`; this path has no such side channel.
++            generation_time_seconds=assistant_message.generation_time_seconds,
+         )
+ 
+         # flip the requestor of the tool calls
+diff --git a/src/tau2/utils/llm_utils.py b/src/tau2/utils/llm_utils.py
+index cc70482..d75f8c3 100644
+--- a/src/tau2/utils/llm_utils.py
++++ b/src/tau2/utils/llm_utils.py
+@@ -21,6 +21,7 @@ from tau2.config import (
+     DEFAULT_LLM_CACHE_TYPE,
+     DEFAULT_MAX_RETRIES,
+     LLM_CACHE_ENABLED,
++    LLM_OVERRIDE,
+     REDIS_CACHE_TTL,
+     REDIS_CACHE_VERSION,
+     REDIS_HOST,
+@@ -376,6 +377,14 @@ def generate(
+     Returns: A tuple containing the message and the cost.
+     """
+     validate_message_history(messages)
++
++    # FORK: single choke point for forcing a model. Every LLM call in tau2 goes
++    # through generate(), so this covers agent, user simulator, judges and the
++    # env interface without touching call sites.
++    if LLM_OVERRIDE and model != LLM_OVERRIDE:
++        logger.debug(f"TAU2_LLM_OVERRIDE: {model} -> {LLM_OVERRIDE}")
++        model = LLM_OVERRIDE
++
+     if kwargs.get("num_retries") is None:
+         kwargs["num_retries"] = DEFAULT_MAX_RETRIES
+ 
+diff --git a/tests/test_domains/test_banking_knowledge/test_retrieval_e2e.py b/tests/test_domains/test_banking_knowledge/test_retrieval_e2e.py
+index 8ec717f..e438ed5 100644
+--- a/tests/test_domains/test_banking_knowledge/test_retrieval_e2e.py
++++ b/tests/test_domains/test_banking_knowledge/test_retrieval_e2e.py
+@@ -128,6 +128,14 @@ _ALL_VARIANTS = [
+         {"KB_search_bm25", "KB_search_dense", "shell"},
+         "all_tools",
+     ),
++    (
++        # Registered in RETRIEVAL_VARIANTS but missing from this table upstream,
++        # which made test_all_variants_table_matches_registry fail. Same tools as
++        # `alltools`; dense search is routed through OpenRouter instead of OpenAI.
++        "alltools-qwen",
++        {"KB_search_bm25", "KB_search_dense", "shell"},
++        "all_tools",
++    ),
+ ]
+ 
+ 
+diff --git a/tests/test_review_model.py b/tests/test_review_model.py
+index f2a7172..a91dfe5 100644
+--- a/tests/test_review_model.py
++++ b/tests/test_review_model.py
+@@ -1,8 +1,17 @@
+ from types import SimpleNamespace
+ 
++import pytest
++
++from tau2.config import DISABLE_LLM_JUDGES
+ from tau2.evaluator import reviewer
+ from tau2.runner import batch
+ 
++# This fork disables LLM judging by default; these tests exercise the reviewer,
++# which now refuses to run. Set TAU2_DISABLE_LLM_JUDGES=0 to exercise them.
++pytestmark = pytest.mark.skipif(
++    DISABLE_LLM_JUDGES, reason="LLM judges disabled (TAU2_DISABLE_LLM_JUDGES)"
++)
++
+ 
+ def test_review_simulation_uses_custom_model_for_full_turn_based(monkeypatch):
+     captured = {}
+diff --git a/tests/test_run.py b/tests/test_run.py
+index ebccc36..0830181 100644
+--- a/tests/test_run.py
++++ b/tests/test_run.py
+@@ -7,6 +7,7 @@ from tau2.config import (
+     DEFAULT_LLM_ARGS_AGENT,
+     DEFAULT_LLM_ARGS_USER,
+     DEFAULT_LLM_USER,
++    DISABLE_LLM_JUDGES,
+ )
+ from tau2.data_model.simulation import RunConfig, TextRunConfig
+ from tau2.data_model.tasks import EnvAssertion, RewardType, Task, make_task
+@@ -271,6 +272,10 @@ def test_run_tasks_history_and_env_assertions(
+     assert simulation is not None
+ 
+ 
++@pytest.mark.skipif(
++    DISABLE_LLM_JUDGES,
++    reason="NL assertions are LLM-judged; disabled via TAU2_DISABLE_LLM_JUDGES",
++)
+ def test_run_tasks_nl_assertions(domain_name: str):
+     """Test running a task with the mock domain"""
+     task = get_tasks(domain_name, task_ids=["create_task_1_nl_eval"])[0]

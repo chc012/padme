@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "n_calls": 388,
+    "n_ok": 388,
+    "n_error": 0,
+    "prompt_tokens": 2499199,
+    "completion_tokens": 293995,
+    "reasoning_tokens": 246898,
+    "reasoning_share": 0.84,
+    "reasoning_source": "derived",
+    "visible_tokens": 47097,
+    "content_chars": 224466,
+    "total_tokens": 2793194,
+    "tokens_per_ok_call": 7199.0,
+    "wall_s": 17927.1,
+    "service_s": 4418.6,
+    "concurrency": 0.25,
+    "latency_mean_s": 11.39,
+    "latency_p50_s": 10.33,
+    "latency_p95_s": 20.66,
+    "out_tps": 16.4
+  }
+}

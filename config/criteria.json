@@ -1,0 +1,14 @@
+[
+  {
+    "name": "friendliness",
+    "description": "Warmth and consideration toward the customer: whether the agent acknowledges their situation and how they feel about it, delivers unwelcome news with care, and leaves them feeling attended to. Judge the manner, not whether the request was resolved."
+  },
+  {
+    "name": "communication_clarity",
+    "description": "How easily the customer can follow the agent: whether the main point is findable, whether technical or policy language is explained, whether multi-part information is organised, and whether the customer is left knowing what is true and what happens next. Judge the presentation, not the warmth or the outcome."
+  },
+  {
+    "name": "task_resolution",
+    "description": "Whether the customer's actual problem was settled: did the agent establish what was needed, take the actions that would resolve it, and leave the customer with the outcome they came for. A correct refusal counts as resolution -- if the request was not permitted, saying so plainly and explaining why resolves it, while quietly doing it anyway does not. Judge the outcome, not the manner or how well it was explained."
+  }
+]
